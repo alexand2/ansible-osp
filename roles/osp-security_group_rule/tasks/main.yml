@@ -1,0 +1,10 @@
+---
+# tasks file for osp-security_group_rule
+- os_security_group_rule:
+    cloud: ospcloud
+    security_group: "{{ item.security_group }}"
+    protocol: "{{ item.protocol }}"
+    port_range_min: "{{ item.port }}"
+    port_range_max: "{{ item.port }}"
+    remote_ip_prefix: 0.0.0.0/0
+  with_items: "{{ rules }}"

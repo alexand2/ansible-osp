@@ -1,0 +1,5 @@
+---
+# vars file for osp-security_group_rule
+rules:
+   - { security_group: 'app', protocol: 'tcp', port: '8080', protocol: 'tcp' }
+   - { security_group: 'app', protocol: 'tcp', port: '22', protocol: 'tcp' }

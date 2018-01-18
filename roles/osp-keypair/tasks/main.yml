@@ -1,0 +1,7 @@
+---
+# tasks file for osp-keypair
+- os_keypair:
+    cloud: ospcloud
+    state: present
+    name: ansible_key
+    public_key_file: /root/.ssh/id_rsa.pub

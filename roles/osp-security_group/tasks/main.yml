@@ -1,0 +1,10 @@
+---
+# tasks file for osp-security_group
+- os_security_group:
+    cloud: ospcloud
+    state: present
+    name: "{{ item }}"
+  with_items:
+    - 'app'
+    - 'db'
+    - 'front'
