@@ -1,0 +1,8 @@
+---
+# vars file for osp-instances
+instance_name: 'app2.osp.internal'
+image: 'rhel-guest'
+flavor: 'm2.small'
+group: 'apps'
+deployment_name: 'QA'
+security_group_name: 'app'

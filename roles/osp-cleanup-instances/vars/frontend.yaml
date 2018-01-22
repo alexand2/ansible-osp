@@ -1,0 +1,8 @@
+---
+# vars file for osp-instances
+instance_name: 'frontend.osp.internal'
+image: 'rhel-guest'
+flavor: 'm2.small'
+group: 'frontends'
+deployment_name: 'QA'
+security_group_name: 'front'

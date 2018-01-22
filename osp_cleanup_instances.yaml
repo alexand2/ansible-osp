@@ -1,0 +1,23 @@
+- hosts: workstation-cf01.rhpds.opentlc.com
+  become: yes
+  gather_facts: false
+  tasks:
+    - name: Delete DB Server
+      include_role:
+        name: osp-cleanup-instances
+        vars_from: db.yaml
+
+    - name: Delete App Server 1
+      include_role:
+        name: osp-cleanup-instances
+        vars_from: app1.yaml
+
+    - name: Delete App Server 2
+      include_role:
+        name: osp-cleanup-instances
+        vars_from: app2.yaml
+
+    - name: Delete Frontend
+      include_role:
+        name: osp-cleanup-instances
+        vars_from: frontend.yaml
