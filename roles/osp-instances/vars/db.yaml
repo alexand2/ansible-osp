@@ -1,6 +1,6 @@
 ---
 # vars file for osp-instances
-instance_name: 'db'
+instance_name: 'db.osp.internal'
 image: 'rhel-guest'
 flavor: 'm2.small'
 group: 'appdbs'
