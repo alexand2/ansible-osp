@@ -1,27 +1,27 @@
 - hosts: localhost
   become: yes
   gather_facts: false
-  roles:
-    - osp-networking
-    - osp-keypair
-    - osp-flavor
-    - osp-security_group
- 
+#  roles:
+#    - osp-networking
+#    - osp-keypair
+#    - osp-flavor
+#    - osp-security_group
+# 
   tasks:
-    - name: Install DB Security Group Rules
-      include_role:
-        name: osp-security_group_rule
-        vars_from: db.yml
-
-    - name: Install App Security Group Rules
-      include_role:
-        name: osp-security_group_rule
-        vars_from: app.yml
-
-    - name: Install Frontend Security Group Rules
-      include_role:
-        name: osp-security_group_rule
-        vars_from: front.yml
+#    - name: Install DB Security Group Rules
+#      include_role:
+#        name: osp-security_group_rule
+#        vars_from: db.yml
+#
+#    - name: Install App Security Group Rules
+#      include_role:
+#        name: osp-security_group_rule
+#        vars_from: app.yml
+#
+#    - name: Install Frontend Security Group Rules
+#      include_role:
+#        name: osp-security_group_rule
+#        vars_from: front.yml
 
     - name: Install DB Server
       include_role:
