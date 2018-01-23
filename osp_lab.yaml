@@ -23,25 +23,22 @@
 #        name: osp-security_group_rule
 #        vars_from: front.yml
 
-    - name: Basic Ping
-      ping:
-
     - name: Install DB Server
       include_role:
         name: osp-instances
         vars_from: db.yaml
-#
-#    - name: Install App Server 1
-#      include_role:
-#        name: osp-instances
-#        vars_from: app1.yaml
-#
-#    - name: Install App Server 2
-#      include_role:
-#        name: osp-instances
-#        vars_from: app2.yaml
-#
-#    - name: Install Frontend
-#      include_role:
-#        name: osp-instances
-#        vars_from: frontend.yaml
+
+    - name: Install App Server 1
+      include_role:
+        name: osp-instances
+        vars_from: app1.yaml
+
+    - name: Install App Server 2
+      include_role:
+        name: osp-instances
+        vars_from: app2.yaml
+
+    - name: Install Frontend
+      include_role:
+        name: osp-instances
+        vars_from: frontend.yaml
