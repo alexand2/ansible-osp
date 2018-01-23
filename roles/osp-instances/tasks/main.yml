@@ -10,7 +10,6 @@
     timeout: 60
     flavor: "{{ flavor }}"
     security_groups: "{{ security_group_name }}"
-    key_name: 'ansible_key'
     wait: yes
     nics:
       - net-name: int_network
