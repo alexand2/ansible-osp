@@ -1,0 +1,2 @@
+[jumpbox]
+workstation-cf01.rhpds.opentlc.com, ansible_connection=local
