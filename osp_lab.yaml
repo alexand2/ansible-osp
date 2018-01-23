@@ -1,4 +1,4 @@
-- hosts: workstation-cf01.rhpds.opentlc.com
+- hosts: jumpbox
   become: yes
   gather_facts: false
 #  roles:
