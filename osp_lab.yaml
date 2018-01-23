@@ -25,10 +25,11 @@
 
     - name: Basic Ping
       ping:
-#    - name: Install DB Server
-#      include_role:
-#        name: osp-instances
-#        vars_from: db.yaml
+
+    - name: Install DB Server
+      include_role:
+        name: osp-instances
+        vars_from: db.yaml
 #
 #    - name: Install App Server 1
 #      include_role:
